@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+    <description>
+      Servlet and JSP Examples.
+    </description>
+    <display-name>Servlet and JSP Examples</display-name>
+
+
+
+    <!-- Define servlets that are included in the example application -->
+
+    <servlet>
+      <servlet-name>Login</servlet-name>
+      <servlet-class>Login</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>FetchInventory</servlet-name>
+      <servlet-class>FetchInventory</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>CheckQuantity</servlet-name>
+      <servlet-class>CheckQuantity</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>UpdateCart</servlet-name>
+      <servlet-class>UpdateCart</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>SubmitInventory</servlet-name>
+      <servlet-class>SubmitInventory</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>Checkout</servlet-name>
+      <servlet-class>Checkout</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>FetchCategory</servlet-name>
+      <servlet-class>FetchCategory</servlet-class>
+    </servlet>
+   <servlet>
+      <servlet-name>FinalConfirmation</servlet-name>
+      <servlet-class>FinalConfirmation</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>Redirect</servlet-name>
+      <servlet-class>Redirect</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>RemoveInventory</servlet-name>
+      <servlet-class>RemoveInventory</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>DoDBQuery</servlet-name>
+      <servlet-class>DoDBQuery</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>FetchVendor</servlet-name>
+      <servlet-class>FetchVendor</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>GetCartAmount</servlet-name>
+      <servlet-class>GetCartAmount</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>CancelOrder</servlet-name>
+      <servlet-class>CancelOrder</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>SubmitOrder</servlet-name>
+      <servlet-class>SubmitOrder</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>GetProduct</servlet-name>
+      <servlet-class>GetProduct</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>ProductView</servlet-name>
+      <servlet-class>ProductView</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>GetCart</servlet-name>
+      <servlet-class>GetCart</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>PutCart</servlet-name>
+      <servlet-class>PutCart</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>RemoveCart</servlet-name>
+      <servlet-class>RemoveCart</servlet-class>
+    </servlet>  
+    <servlet>
+      <servlet-name>Logout</servlet-name>
+      <servlet-class>Logout</servlet-class>
+    </servlet>    
+    <servlet>
+      <servlet-name>Test</servlet-name>
+      <servlet-class>Test</servlet-class>
+    </servlet>        
+
+    <servlet-mapping>
+        <servlet-name>FetchInventory</servlet-name>
+        <url-pattern>/servlet/FetchInventory</url-pattern>
+    </servlet-mapping>
+   <servlet-mapping>
+        <servlet-name>SubmitInventory</servlet-name>
+        <url-pattern>/servlet/SubmitInventory</url-pattern>
+    </servlet-mapping>
+   <servlet-mapping>
+        <servlet-name>Checkout</servlet-name>
+        <url-pattern>/servlet/Checkout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FetchVendor</servlet-name>
+        <url-pattern>/servlet/FetchVendor</url-pattern>
+    </servlet-mapping>
+   <servlet-mapping>
+        <servlet-name>FinalConfirmation</servlet-name>
+        <url-pattern>/servlet/FinalConfirmation</url-pattern>
+    </servlet-mapping>
+   
+   <servlet-mapping>
+        <servlet-name>FetchCategory</servlet-name>
+        <url-pattern>/servlet/FetchCategory</url-pattern>
+    </servlet-mapping>
+ 
+   <servlet-mapping>
+        <servlet-name>SubmitOrder</servlet-name>
+        <url-pattern>/servlet/SubmitOrder</url-pattern>
+    </servlet-mapping>
+   
+   <servlet-mapping>
+        <servlet-name>CheckQuantity</servlet-name>
+        <url-pattern>/servlet/CheckQuantity</url-pattern>
+    </servlet-mapping>
+   
+   <servlet-mapping>
+        <servlet-name>RemoveInventory</servlet-name>
+        <url-pattern>/servlet/RemoveInventory</url-pattern>
+    </servlet-mapping>
+   <servlet-mapping>
+        <servlet-name>Redirect</servlet-name>
+        <url-pattern>/servlet/Redirect</url-pattern>
+    </servlet-mapping>
+   
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/servlet/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DoDBQuery</servlet-name>
+        <url-pattern>/servlet/DoDBQuery</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>UpdateCart</servlet-name>
+        <url-pattern>/servlet/UpdateCart</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>GetProduct</servlet-name>
+        <url-pattern>/servlet/GetProduct</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>ProductView</servlet-name>
+        <url-pattern>/servlet/ProductView</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>PutCart</servlet-name>
+        <url-pattern>/servlet/PutCart</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>CancelOrder</servlet-name>
+        <url-pattern>/servlet/CancelOrder</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>RemoveCart</servlet-name>
+        <url-pattern>/servlet/RemoveCart</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>GetCart</servlet-name>
+        <url-pattern>/servlet/GetCart</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>GetCartAmount</servlet-name>
+        <url-pattern>/servlet/GetCartAmount</url-pattern>
+    </servlet-mapping> 
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/servlet/Logout</url-pattern>
+    </servlet-mapping>  
+    <servlet-mapping>
+        <servlet-name>Test</servlet-name>
+        <url-pattern>/servlet/Test</url-pattern>
+    </servlet-mapping>       
+
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>
+               http://tomcat.apache.org/debug-taglib
+            </taglib-uri>
+            <taglib-location>
+               /WEB-INF/jsp/debug-taglib.tld
+            </taglib-location>
+        </taglib>
+
+        <taglib>
+            <taglib-uri>
+               http://tomcat.apache.org/example-taglib
+            </taglib-uri>
+            <taglib-location>
+               /WEB-INF/jsp/example-taglib.tld
+            </taglib-location>
+        </taglib>
+
+        <taglib>
+            <taglib-uri>
+               http://tomcat.apache.org/jsp2-example-taglib
+            </taglib-uri>
+            <taglib-location>
+               /WEB-INF/jsp2/jsp2-example-taglib.tld
+            </taglib-location>
+        </taglib>
+
+        <jsp-property-group>
+            <description>
+                Special property group for JSP Configuration JSP example.
+            </description>
+            <display-name>JSPConfiguration</display-name>
+            <url-pattern>/jsp/jsp2/misc/config.jsp</url-pattern>
+            <el-ignored>true</el-ignored>
+            <page-encoding>ISO-8859-1</page-encoding>
+            <scripting-invalid>true</scripting-invalid>
+            <include-prelude>/jsp/jsp2/misc/prelude.jspf</include-prelude>
+            <include-coda>/jsp/jsp2/misc/coda.jspf</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+
+   <security-constraint>
+      <display-name>Example Security Constraint</display-name>
+      <web-resource-collection>
+         <web-resource-name>Protected Area</web-resource-name>
+         <!-- Define the context-relative URL(s) to be protected -->
+         <url-pattern>/jsp/security/protected/*</url-pattern>
+         <!-- If you list http methods, only those methods are protected -->
+         <http-method>DELETE</http-method>
+         <http-method>GET</http-method>
+         <http-method>POST</http-method>
+         <http-method>PUT</http-method>
+      </web-resource-collection>
+      <auth-constraint>
+         <!-- Anyone with one of the listed roles may access this area -->
+         <role-name>tomcat</role-name>
+         <role-name>role1</role-name>
+      </auth-constraint>
+    </security-constraint>
+
+    <!-- Security roles referenced by this web application -->
+    <security-role>
+      <role-name>role1</role-name>
+    </security-role>
+    <security-role>
+      <role-name>tomcat</role-name>
+    </security-role>
+
+
+</web-app>
